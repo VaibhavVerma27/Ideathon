@@ -1,5 +1,5 @@
 "use client";
-
+import Navbar from "@/components/navbar/teachernavbar";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import {useParams} from "next/navigation";
@@ -61,7 +61,7 @@ export default function AttendancePage() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
-      {/* Header */}
+      <div><Navbar/></div>
       <h1 className="text-3xl font-bold text-center text-blue-500 mb-8">
         Attendance for {attendanceData.groupName}
       </h1>

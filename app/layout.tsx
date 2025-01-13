@@ -31,7 +31,8 @@ export default function RootLayout({
   const pathname = usePathname(); // Get the current pathname
 
   // Conditionally render Navbar based on the current path
-  const shouldRenderNavbar = pathname !== "/dashboard/teacher"; // Replace '/specific-page' with the path where you don't want the Navbar
+  
+  const shouldRenderNavbar = !(pathname === "/dashboard/teacher" || pathname.startsWith("/teacher"));
 
   return (
     <html lang="en">

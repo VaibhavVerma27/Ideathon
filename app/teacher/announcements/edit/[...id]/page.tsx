@@ -1,5 +1,5 @@
 "use client";
-
+import Navbar from "@/components/navbar/teachernavbar";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {useParams, useRouter} from "next/navigation";
@@ -75,7 +75,7 @@ export default function TeacherAddAnnouncement() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white">
-      {/* Page Header */}
+       <div><Navbar/></div>
       <div className="w-full py-8 bg-gray-950 shadow-lg flex justify-center items-center space-x-4">
         <h1 className="text-3xl font-extrabold text-blue-500 text-center">edit Class Announcement</h1>
         <button

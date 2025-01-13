@@ -1,5 +1,5 @@
 "use client"
-
+import Navbar from "@/components/navbar/teachernavbar";
 import {useModel} from "../../../hooks/user-model-store";
 import {useRouter} from "next/navigation";
 import {useEffect} from "react";
@@ -48,6 +48,7 @@ export default function SubjectsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white">
       {/* Page Header */}
+      <div><Navbar/></div>
       <div className="w-full py-10 bg-gray-950 shadow-lg">
         <h1 className="text-3xl font-extrabold text-center text-blue-500 tracking-wide">
           Your Subjects
