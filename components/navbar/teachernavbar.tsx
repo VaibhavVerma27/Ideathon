@@ -197,8 +197,8 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
       {/* Menu */}
       <div className={`mt-4 space-y-4 ${isMenuOpen ? "block" : "hidden"} md:block`}>
         <ul className="flex flex-col md:flex-row space-y-6 md:space-x-6 md:space-y-0">
-          {isAdmin && renderAdminFields()}
-          {isTeacher && !isAdmin && renderTeacherFields()} 
+          {isTeacher && renderAdminFields()}
+          {!isTeacher && isAdmin && renderTeacherFields()} 
           {isStudent && !isAdmin && !isTeacher && renderCommonFields()} {/* Render common fields for students only */}
         </ul>
       </div>
