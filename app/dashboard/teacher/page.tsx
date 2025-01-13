@@ -1,5 +1,5 @@
 'use client';
-
+import Navbar from "@/components/navbar/teachernavbar";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -51,6 +51,7 @@ const TeacherDashboard = () => {
 
   return (
     <div className="bg-gradient-to-b from-blue-800 to-black min-h-screen p-6 text-white font-sans transition-all duration-300">
+      <div><Navbar/></div>
       <h1 className="text-4xl font-bold text-transparent bg-gradient-to-r from-white to-gray-300 bg-clip-text absolute top-5 left-5 transition-all duration-300">
         Welcome, {user.username}
       </h1>

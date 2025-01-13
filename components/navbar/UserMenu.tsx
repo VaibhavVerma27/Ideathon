@@ -43,14 +43,14 @@ function UserMenu() {
       </div>
       {isOpen && (
         <div
-          className="absolute rounded-xl shadow-md w-[50vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm"
+          className="absolute rounded-xl shadow-md w-[15vw] md: bg-white overflow-hidden right-0 top-12 text-sm"
         >
           <div className="flex flex-col cursor-pointer">
             {session ? (
               <>
                 <button
                   onClick={handleSignOut}
-                  className="py-2 px-4 text-black hover:bg-gray-200 text-left font-bold"
+                  className="py-3 px-4 text-black hover:bg-gray-200 text-left font-bold"
                 >
                   Logout
                 </button>
